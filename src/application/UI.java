@@ -3,13 +3,13 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.management.RuntimeErrorException;
-
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
 
 public class UI {
+	
+	// https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
 
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
@@ -44,7 +44,7 @@ public class UI {
 			int row = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
 		} catch (RuntimeException e) {
-			throw new InputMismatchException("Erro ao ler posiçao.");
+			throw new InputMismatchException("Erro ao ler posicao: Digite posicoes entre A1 e H8");
 		}
 	}
 
