@@ -67,7 +67,7 @@ public class UI {
 		}
 		else {
 			System.out.println("CHECKMATE!");
-			System.out.println("Jogador atual");
+			System.out.println(match.getCurrentPlayer());
 		}
 	}
 	
