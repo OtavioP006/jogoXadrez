@@ -59,9 +59,15 @@ public class UI {
 		System.out.println();
 		System.out.println("Turno: " + match.getTurn());
 		System.out.println("Esperando o jogador: " + match.getCurrentPlayer());
-		
-		if (match.getCheck()) {
-			System.out.println("CHECK!");
+		if(!match.getCheckMate()) {
+			if (match.getCheck()) {
+				System.out.println("CHECK!");
+			}
+			
+		}
+		else {
+			System.out.println("CHECKMATE!");
+			System.out.println("Jogador atual");
 		}
 	}
 	
