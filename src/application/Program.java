@@ -33,13 +33,13 @@ public class Program {
 				ChessPosition target = UI.readChessPosition(input);
 				
 				
-				
-				
 				ChessPiece capturedPiece = match.performChessMove(source, target);
 				
 				if (capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
+				
+				UI.clearScreen();
 				
 
 			}
