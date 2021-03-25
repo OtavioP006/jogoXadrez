@@ -39,7 +39,6 @@ public class Program {
 					captured.add(capturedPiece);
 				}
 				
-				UI.clearScreen();
 				
 
 			}
