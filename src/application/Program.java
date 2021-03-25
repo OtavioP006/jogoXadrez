@@ -39,6 +39,11 @@ public class Program {
 					captured.add(capturedPiece);
 				}
 				
+				if(match.getPromoted() != null) {
+					System.out.print("Entre com para qual peca promover (Q/N/R/B: " );
+					String type = input.nextLine();
+					match.replacePromotedPiece(type);
+				}
 				
 
 			}
