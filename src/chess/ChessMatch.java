@@ -2,7 +2,7 @@ package chess;
 
 import boardgame.Position;
 
-import java.security.InvalidParameterException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -123,7 +123,7 @@ public class ChessMatch {
 			throw new IllegalStateException("Nao existe peca a ser promovida");
 		}
 		if (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
-			throw new InvalidParameterException("Promocao Invalida");
+			return promoted;
 		}
 		
 		Position pos = promoted.getChessPosition().toPosition();
